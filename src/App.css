@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.coin-container {
+	display: flex;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.coin-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	height: 80px;
+	border-bottom: 1px solid #d7d7d7;
+	width: 900px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.coin {
+	display: flex;
+	align-items: center;
+	padding-right: 24px;
+
+	min-width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.coin h1 {
+	font-size: 16px;
+	width: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.coin img {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-symbol {
+	text-transform: uppercase;
+}
+
+.coin-data {
+	display: flex;
+	text-align: right;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.coin-price {
+	width: 110px;
+}
+
+.coin-volume {
+	width: 155px;
+}
+
+.coin-marketcap {
+	width: 230px;
+}
+
+.coin-percent {
+	width: 100px;
+}
+
+.red {
+	color: #f00606;
+}
+
+.green {
+	color: #11d811;
 }
